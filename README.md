@@ -8,10 +8,10 @@ In diesem persönlichen Projekt geht es darum, meine Fähigkeiten in HTML und CS
 
 ## Projektziele
 
-1. **HTML Grundlagen:** Lernen, wie die Struktur einer Webseiten mit HTML erstellt wird. Verstehen der Bedeutung von Tags, Elementen und Attributen.
+1. **HTML Grundlagen:** Lernen, wie die Struktur einer Webseite mit HTML erstellt wird. Verstehen der Bedeutung von Tags, Elementen und Attributen.
 
-2. **CSS Styling:** Die Welt des CSS entdecken und lernen, wie einer Webseiten Stil und Design verleihe. Von Farben und Schriftarten bis zu Layouts und Animationen.
+2. **CSS Styling:** Die Welt des CSS entdecken und lernen, wie einer Webseite Stil und Design verleihen. Von Farben und Schriftarten bis zu Layouts und Animationen.
 
-3. **Responsives Design:** Verstehen, wie eine Webseiten für verschiedene Bildschirmgrößen optimiert und ein responsives Design erstellt wird.
+3. **Responsives Design:** Verstehen, wie eine Webseite für verschiedene Bildschirmgrößen optimiert und ein responsives Design erstellt wird.
 
 **Happy coding and keep learning!** 🚀✨
