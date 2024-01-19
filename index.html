@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>GrinsGram</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="GrinsGram Logo"></a>
+            </div>
+            <div class="navbar-right">
+                <a class="btn-nav-right-anmelden" href="#">Anmelden</a>
+                <a class="btn-nav-right-registrieren" href="#">Registrieren</a>
+            </div>
+        </div>
+    </header>
+    <!-- Profilgedöns -->
+    <div class="flexbox">
+        <div class="profil">
+            <div class="profil-bild">
+                <img class="profil-bild-image" src="img/profilbild.png" alt="">
+            </div>
+            <div class="profilkram">
+                <div class="profil-info">
+                    <label class="label-profil"> Coole Sau</label>
+                    <button> Folgen</button>
+                    <button> Nachticht senden</button>
+                    <button> ...</button>
+                </div>
+                <div class="profil-stats">
+                    <label class="stats"> 5711 Beiträge</label>
+                    <label class="stats"> 1175 Follower </label>
+                    <label class="stats"> gefolgt</label>
+                </div>
+                <div class="profil-bio">
+                    <p>Abenteurer des Coolen 🕶️ <br> Königin des Stils 👑 <br> Chill-Meisterin 🍦 <br> Trendsetter und Lebensgenießer 🌟 <br> Immer auf der Suche nach dem nächsten Coolness-Level 🚀 <br> Mode, Musik und Magie 💫 <br> Living the cool life one day at a time. 😎✌️
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Gallerie -->
+    <div class="gallerie">
+        <div class="colums">
+            <img class="gallerie-img" src="img/1.png" alt="">
+            <video class="gallerie-img" controls>
+                <source src="img/video1.mp4" type="video/mp4">
+            </video>
+            <img class="gallerie-img" src="img/5.png" alt="">
+            <img class="gallerie-img" src="img/6.png" alt="">
+            <img class="gallerie-img" src="img/3.png" alt="">
+            <img class="gallerie-img" src="img/2.png" alt="">
+            <img class="gallerie-img" src="img/1.png" alt="">
+            <img class="gallerie-img" src="img/4.png" alt="">
+            <img class="gallerie-img" src="img/5.png" alt="">
+        </div>
+            
+        <div class="colums">
+            <video class="gallerie-img" controls>
+                <source src="img/video2.mp4" type="video/mp4">
+            </video>
+            <img class="gallerie-img" src="img/5.png" alt="">
+            <img class="gallerie-img" src="img/2.png" alt="">
+            <img class="gallerie-img" src="img/1.png" alt="">
+            <img class="gallerie-img" src="img/3.png" alt="">
+            <img class="gallerie-img" src="img/2.png" alt="">
+            <img class="gallerie-img" src="img/1.png" alt="">
+            <img class="gallerie-img" src="img/5.png" alt="">
+            <img class="gallerie-img" src="img/6.png" alt="">
+        </div>
+            
+        <div class="colums">
+            <img class="gallerie-img" src="img/3.png" alt="">
+            <img class="gallerie-img" src="img/2.png" alt="">
+            <video class="gallerie-img" controls>
+                <source src="img/video3.mp4" type="video/mp4">
+            </video>
+            <img class="gallerie-img" src="img/1.png" alt="">
+            <img class="gallerie-img" src="img/5.png" alt="">
+            <img class="gallerie-img" src="img/6.png" alt="">
+            <img class="gallerie-img" src="img/3.png" alt="">
+            <img class="gallerie-img" src="img/2.png" alt="">
+            <img class="gallerie-img" src="img/5.png" alt="">
+        </div>
+
+    </div>
+    
+</body>
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Informationen</h3>
+            <ul>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Unternehmen</h3>
+            <ul>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Hilfe</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Ressourcen</h3>
+            <ul>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Datenrichtlinie</a></li>
+                <li><a href="#">Cookie-Einstellungen</a></li>
+            </ul>
+        </div>
+    </div>
+    <p id="copyright"></p>
+</footer>
+<script>
+    // JavaScript, um das aktuelle Jahr in das Copyright-Element einzufügen
+    document.getElementById('copyright').textContent = '\u00A9 ' + new Date().getFullYear() + ' GrinsGram. Alle Rechte vorbehalten.';
+</script>
+</html>
