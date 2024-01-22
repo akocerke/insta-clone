@@ -88,7 +88,7 @@ header {
 
 button {
     padding: 10px 15px;
-    color: var(--secondarycolor);
+    color: var(--secondary-color);
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
