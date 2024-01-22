@@ -1,9 +1,14 @@
+:root{
+    --backround-color: linear-gradient(#800020, #000000);
+    --secondarycolor: #800020;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: rgb(128, 0, 32);
-    background-image: linear-gradient(#800020, #000000);
+    background: var(--secondarycolor);
+    background-image: var(--backround-color);
     color: #ffffff;
 }
 
@@ -75,6 +80,7 @@ header {
     max-height: 150px;
     border-radius: 50%;
 }
+
 .label-profil{
     font-weight: bold;
     font-size: 22px;
@@ -82,7 +88,7 @@ header {
 
 button {
     padding: 10px 15px;
-    color: #800020;
+    color: var(--secondarycolor);
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -116,34 +122,62 @@ margin-top: 20px;
 
 }
 
-.flexbox{
-    /* background-color: violet; */
+.flexbox {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
 .gallerie {
-    /* background-color: #000000; */
     display: grid;
     justify-content: space-around;
-    max-width: 1000px;
     margin: 0 auto; /* Horizontal zentrieren */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
-.colums{
-    display: flex;
-}
-
-.gallerie-img{
+.gallerie-img {
     height: 200px;
     width: 200px;
     object-fit: cover;
     margin: 5px;
+    border-radius: 5px;
 }
 
+/* Standardregel für Bildschirme mit einer Breite größer als 900px */
+.gallerie {
+    display: grid;
+    justify-content: space-around;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* Media Query für Bildschirme mit einer Breite von höchstens 900px */
+@media screen and (max-width: 900px) {
+    .gallerie {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-content: center;
+    }
+}
+
+/* Media Query für Bildschirme mit einer Breite von höchstens 600px */
+@media screen and (max-width: 600px) {
+    .gallerie {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-content: center;
+    }
+}
+
+/* Media Query für Bildschirme mit einer Breite von höchstens 300px */
+@media screen and (max-width: 300px) {
+    .gallerie {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Beispiel: 2 Bilder in einer Reihe */
+        justify-content: center;
+    }
+}
+
+
 footer {
-    background-color: 180006;
+    background-color: var(--backround-color);
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -180,7 +214,5 @@ footer {
 .footer-section a:hover {
     text-decoration: underline;
 }
-
-
 
 
