@@ -1,6 +1,6 @@
-:root{
-    --backround-color: linear-gradient(#800020, #000000);
-    --secondarycolor: #800020;
+:root {
+    --background-color: linear-gradient(#800020, #000000);
+    --secondary-color: #800020;
 }
 
 body {
@@ -207,7 +207,7 @@ footer {
 /* Media Query für Bildschirme mit einer Breite von höchstens 300px */
 @media screen and (max-width: 300px) {
     .gallerie {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Beispiel: 2 Bilder in einer Reihe */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
         justify-content: center;
     }
 }
