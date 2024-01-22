@@ -129,7 +129,6 @@ margin-top: 20px;
 }
 
 .gallerie {
-    display: grid;
     justify-content: space-around;
     margin: 0 auto; /* Horizontal zentrieren */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -146,7 +145,7 @@ margin-top: 20px;
 /* Standardregel für Bildschirme mit einer Breite größer als 900px */
 .gallerie {
     display: grid;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
