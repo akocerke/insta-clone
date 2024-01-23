@@ -129,8 +129,8 @@ margin-top: 20px;
 }
 
 .gallerie {
-    justify-content: space-around;
-    margin: 0 auto; /* Horizontal zentrieren */
+    display: flex;
+    width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
@@ -196,19 +196,88 @@ footer {
     }
 }
 
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    color: #000000;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.anmelden{
+    margin-top: 10%;
+    display: flex;
+    margin-bottom: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Änderung zu flex-direction: column; */
+    align-items: center;
+    color: #ffffff;
+}
+.anmelden h1 {
+    margin-bottom: 50px; /* Platzierung zwischen dem Titel und dem Formular hinzufügen */
+}
+
+
+.submit {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #07a348;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.submit:hover {
+    color: #ffffff;
+    background-color: #4bab70;
+    border-radius: 5px;
+}
+
+#output{
+    margin-top: 30px;
+}
+
+
 /* Media Query für Bildschirme mit einer Breite von höchstens 600px */
 @media screen and (max-width: 600px) {
     .gallerie {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         justify-content: center;
     }
+    .gallerie-img{
+        display: flex;
+    }
 }
 
 /* Media Query für Bildschirme mit einer Breite von höchstens 300px */
 @media screen and (max-width: 300px) {
     .gallerie {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+    }
+    .gallerie-img {
+        width: 100%;
+        max-width: 150px;
+        margin: 5px;
     }
 }
 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>GrinsGram Anmelden</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="GrinsGram Logo"></a>
+            </div>
+            <div class="navbar-right">
+                <a class="btn-nav-right-registrieren" href="signup.html">Registrieren</a>
+            </div>
+        </div>
+    </header>
+    <div class="anmelden">
+        <div class="form">
+            <h1>Anmelden</h1>
+        <form onsubmit="onSubmitForm()" method="post" action="http://127.0.0.1:8080">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Passwort:</label>
+            <input type="text" id="password" name="password" required>
+
+            <input class="submit" type="submit" value="Anmelden"> 
+
+        </form>
+        
+        </div>
+        <div id="output"></div>
+        
+        
+    </div>
+    
+
+    
+    
+</body>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Informationen</h3>
+            <ul>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Unternehmen</h3>
+            <ul>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Hilfe</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Ressourcen</h3>
+            <ul>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Datenrichtlinie</a></li>
+                <li><a href="#">Cookie-Einstellungen</a></li>
+            </ul>
+        </div>
+    </div>
+    <p id="copyright"></p>
+</footer>
+
+<script>
+    // JavaScript, um das aktuelle Jahr in das Copyright-Element einzufügen
+    document.getElementById('copyright').textContent = '\u00A9 ' + new Date().getFullYear() + ' GrinsGram. Alle Rechte vorbehalten.';
+</script>
+</html>
