@@ -99,6 +99,24 @@ function loadImages() {
                 'img/4.png',
                 'img/5.png',
                 'img/6.png',
+                'img/1.png',
+                'img/2.png',
+                'img/3.png',
+                'img/4.png',
+                'img/5.png',
+                'img/6.png',
+                'img/1.png',
+                'img/2.png',
+                'img/3.png',
+                'img/4.png',
+                'img/5.png',
+                'img/6.png',
+                'img/1.png',
+                'img/2.png',
+                'img/3.png',
+                'img/4.png',
+                'img/5.png',
+                'img/6.png',
 
                 // ... weitere Bild-URLs
             ]
@@ -119,5 +137,22 @@ function loadImages() {
 }
 
 document.addEventListener('DOMContentLoaded', loadImages);
+
+
+//==============Progressbar
+// Move-Funktion, um die Progressbar zu aktualisieren
+function move() {
+    var elem = document.getElementById("myBar");
+    var width = parseInt(elem.style.width) || 1; // Aktuelle Breite oder 1, wenn nicht vorhanden
+    width++;
+    elem.style.width = width + "%";
+    
+    if (width >= 100) {
+        clearInterval(intervalID);
+    }
+}
+
+// Automatisch alle 10 Millisekunden die Move-Funktion aufrufen
+var intervalID = setInterval(move, 10);
 
 

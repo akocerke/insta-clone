@@ -134,6 +134,8 @@ margin-top: 20px;
     justify-content: center;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 80%;
+    margin-top: 20px;
 }
 
 .image-container img {
@@ -143,6 +145,29 @@ margin-top: 20px;
     margin: 5px;
     border-radius: 5px;
 }
+
+#callback {
+    background-color: #dbe526;
+    color: #ffffff; 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+    font-size: 2em; 
+    max-width: 600px;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 35%;
+  }
+
+  #myBar {
+    width: 1%;
+    height: 35px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+  }
 
 footer {
     background-color: var(--backround-color);
@@ -182,15 +207,6 @@ footer {
 .footer-section a:hover {
     text-decoration: underline;
 }
-
-/* Media Query für Bildschirme mit einer Breite von höchstens 900px */
-@media screen and (max-width: 900px) {
-    .gallerie {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        justify-content: center;
-    }
-}
-
 
 form {
     background-color: #fff;
@@ -250,22 +266,14 @@ input {
     margin-top: 30px;
 }
 
-#callback {
-    background-color: #45db34; 
-    color: #120101; 
-    padding: 10px; 
-    border-radius: 5px; 
-    text-align: center; 
-    font-size: 2em; 
-    max-width: 600px;
-    max-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-left: 40%;
-    
-  }
+/* Media Query für Bildschirme mit einer Breite von höchstens 900px */
+@media screen and (max-width: 900px) {
+    .gallerie {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-content: center;
+    }
+}
+
 
 /* Media Query für Bildschirme mit einer Breite von höchstens 600px */
 @media screen and (max-width: 600px) {
@@ -278,8 +286,8 @@ input {
     }
 }
 
-/* Media Query für Bildschirme mit einer Breite von höchstens 300px */
-@media screen and (max-width: 300px) {
+/* Media Query für Bildschirme mit einer Breite von höchstens 400px */
+@media screen and (max-width: 400px) {
     .gallerie {
         display: flex;
         flex-wrap: wrap;
@@ -289,6 +297,54 @@ input {
         width: 100%;
         max-width: 150px;
         margin: 5px;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Abstand zwischen Logo und Anmelden/Registrieren-Links */
+    }
+
+    .navbar-right {
+        display: flex;
+        flex-direction: column; /* Änderung auf column für die gewünschte Anordnung */
+        align-items: center; /* Zentrierung der Links */
+        margin-top: 10px; /* Abstand zwischen Anmelden/Registrieren-Links */
+    }
+
+    .navbar-right a {
+        margin: 5px 0; /* Abstand zwischen Anmelden/Registrieren-Links */
+    }
+    header {
+        background-color: #1d1d2a;
+        color: white;
+        padding: 10px;
+        width: 120%;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil {
+        width: 100%; /* Die volle Breite des Bildschirms nutzen */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil-bild {
+        text-align: center; /* Zentriert das Profilbild */
+    }
+
+    .profilkram {
+        width: 100%; /* Die volle Breite des Bildschirms nutzen */
+        text-align: center;
     }
 }
 
